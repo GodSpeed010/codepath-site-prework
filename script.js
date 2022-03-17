@@ -2,8 +2,9 @@
 const clueHoldTime = 1000; //how long to hold each clue's light/sound
 const cluePauseTime = 333; //how long to pause in between clues
 const nextClueWaitTime = 1000; //how long to wait before starting playback of the clue sequence
-
+const maxMistakes = 2;
 //Global Variables
+
 //randomly generated array of size 6 with integers from 1 to 5 (inclusive)
 var pattern = Array(6)
   .fill()
@@ -13,12 +14,17 @@ var gamePlaying = false;
 var tonePlaying = false;
 var volume = 0.5; //must be between 0.0 and 1.0
 var guessCounter = 0;
+var mistakesCount = 0;
 
 function startGame() {
   //initialize game variables
   progress = 0;
   gamePlaying = true;
+  mistakesCount = 0;
 
+  //set the number of lives remaining
+  updateLivesLeftText();
+  
   //Swap the Start and Stop buttons
   document.getElementById("startBtn").classList.add("hidden");
   document.getElementById("stopBtn").classList.remove("hidden");
@@ -43,21 +49,27 @@ function loseGame() {
   alert("Game Over. You lost.");
 }
 
+function updateLivesLeftText() {
+    document.getElementById("livesLeft").innerHTML = `${maxMistakes - mistakesCount + 1} lives left`
+}
+
 async function setRandomCat(btn) {
-  let response = await fetch('https://api.thecatapi.com/v1/images/search')
-  var data = await response.json()
-  console.log(data[0].url)
-  let image_url = data[0].url
-  
-  document.getElementById("button" + btn).style.backgroundImage = `url(${image_url})`
-  document.getElementById("button" + btn).style.backgroundSize = '90% 90%'
-  document.getElementById("button" + btn).style.backgroundRepeat = 'no-repeat'
-  document.getElementById("button" + btn).style.backgroundPosition = 'center'
+  let response = await fetch("https://api.thecatapi.com/v1/images/search");
+  var data = await response.json();
+  console.log(data[0].url);
+  let image_url = data[0].url;
+
+  document.getElementById(
+    "button" + btn
+  ).style.backgroundImage = `url(${image_url})`;
+  document.getElementById("button" + btn).style.backgroundSize = "90% 90%";
+  document.getElementById("button" + btn).style.backgroundRepeat = "no-repeat";
+  document.getElementById("button" + btn).style.backgroundPosition = "center";
 }
 
 function guess(btn) {
-  setRandomCat(btn)
-  
+  setRandomCat(btn);
+
   console.log("user guessed: " + btn);
   if (!gamePlaying) {
     return;
@@ -84,7 +96,12 @@ function guess(btn) {
   }
   //Guess was incorrect
   else {
-    loseGame();
+    if (mistakesCount == maxMistakes) {
+      loseGame();
+    } else {
+      mistakesCount++;
+      updateLivesLeftText();
+    }
   }
 }
 

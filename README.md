@@ -4,7 +4,7 @@
 
 Submitted by: **Ahmad Hossain**
 
-Time spent: **7** hours spent in total
+Time spent: **9** hours spent in total
 
 Link to project: [https://glitch.com/edit/#!/possible-spangle-september](https://glitch.com/edit/#!/possible-spangle-september)
 
@@ -27,7 +27,7 @@ The following **optional** features are implemented:
 * [X] More than 4 functional game buttons
 * [ ] Playback speeds up on each turn
 * [X] Computer picks a different pattern each time the game is played
-* [ ] Player only loses after 3 mistakes (instead of on the first mistake)
+* [X] Player only loses after 3 mistakes (instead of on the first mistake)
 * [X] Game button appearance change goes beyond color (e.g. add an image)
 * [ ] Game button sound is more complex than a single tone (e.g. an audio file, a chord, a sequence of multiple tones)
 * [ ] User has a limited amount of time to enter their guess on each turn
@@ -39,7 +39,6 @@ The following **additional** features are implemented:
 ## Video Walkthrough (GIF)
 
 If you recorded multiple GIFs for all the implemented features, you can add them here:
-
 
 ##### Game Win
 <img src='https://thumbs.gfycat.com/UncomfortableSparseGar-size_restricted.gif' title='Video Walkthrough' width='400' height='400' alt='Video Walkthrough' />
@@ -53,7 +52,6 @@ If you recorded multiple GIFs for all the implemented features, you can add them
 * Used Google to find the CSS syntax for increasing border-width for an element. I increased the border width for all buttons.
 * Used Google and W3Schools to learn about styling background images.
 
-
 **2. What was a challenge you encountered in creating this submission (be specific)? How did you overcome it? (recommended 200 - 400 words)**
 
 A challenge I encountered in creating this submission is finding out how to add some padding inside the buttons so that the cat images don’t take up the entire space. I had tried multiple solutions such as setting padding, margins, and background-size. However, I wasn’t able to find what I wanted. Therefore, I began doing research online to see how others have solved this problem. It did take some patience, but eventually I stumbled upon a solution through my research. If I wasn’t able to find a solution after some time, I would have asked for help in an active community such as #webdev on Slack, Stack Overflow, or a Discord server for Web Development.
@@ -61,7 +59,6 @@ A challenge I encountered in creating this submission is finding out how to add 
 **3. What questions about web development do you have after completing your submission? (recommended 100 - 300 words)** 
 * It was mentioned in the lesson that you can apply a certain CSS style using div#someIdHere. I'm curious why you would need to specify the kind of element for the ID, as there can only be one kind of ID in the entire file. My first thoughts are that it would be sufficient to just use #someIdHere rather than specifying the type of element as well because it seems redundant.
 * I would like to know about the different architectures for keeping script code and CSS styles organized. By looking at my project thus far, I can see how it would be difficult to read through all the code and CSS Styles just to add a new feature. The Web Developer community must have developed certain strategies to help with this, and I'm very interested in the different methods.
-
 
 **4. If you had a few more hours to work on this project, what would you spend them doing (for example: refactoring certain functions, adding additional features, etc). Be specific. (recommended 100 - 300 words)** 
 * I would spend time organizing the script code into different files so that everything is very easy to understand. For example, I would put all the audio related code into one file and give it a relevant name to keep everything organized. This would help me find out where I would need to add code if I wanted to add a new feature in the future.
