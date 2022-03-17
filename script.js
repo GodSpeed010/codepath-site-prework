@@ -7,8 +7,7 @@ const nextClueWaitTime = 1000; //how long to wait before starting playback of th
 //randomly generated array of size 6 with integers from 1 to 5 (inclusive)
 var pattern = Array(6)
   .fill()
-  .map(() => Math.floor(5 * Math.random() + 1)); // numbers from 0-50 (exclusive)
-console.log(pattern);
+  .map(() => Math.floor(5 * Math.random() + 1));
 var progress = 0;
 var gamePlaying = false;
 var tonePlaying = false;
@@ -44,7 +43,21 @@ function loseGame() {
   alert("Game Over. You lost.");
 }
 
+async function setRandomCat(btn) {
+  let response = await fetch('https://api.thecatapi.com/v1/images/search')
+  var data = await response.json()
+  console.log(data[0].url)
+  let image_url = data[0].url
+  
+  document.getElementById("button" + btn).style.backgroundImage = `url(${image_url})`
+  document.getElementById("button" + btn).style.backgroundSize = '90% 90%'
+  document.getElementById("button" + btn).style.backgroundRepeat = 'no-repeat'
+  document.getElementById("button" + btn).style.backgroundPosition = 'center'
+}
+
 function guess(btn) {
+  setRandomCat(btn)
+  
   console.log("user guessed: " + btn);
   if (!gamePlaying) {
     return;
