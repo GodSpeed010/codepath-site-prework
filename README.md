@@ -4,7 +4,7 @@
 
 Submitted by: **Ahmad Hossain**
 
-Time spent: **5** hours spent in total
+Time spent: **7** hours spent in total
 
 Link to project: [https://glitch.com/edit/#!/possible-spangle-september](https://glitch.com/edit/#!/possible-spangle-september)
 
@@ -25,7 +25,7 @@ The following **optional** features are implemented:
 * [X] Any HTML page elements (including game buttons) has been styled differently than in the tutorial
 * [X] Buttons use a pitch (frequency) other than the ones in the tutorial
 * [X] More than 4 functional game buttons
-* [] Playback speeds up on each turn
+* [ ] Playback speeds up on each turn
 * [X] Computer picks a different pattern each time the game is played
 * [ ] Player only loses after 3 mistakes (instead of on the first mistake)
 * [X] Game button appearance change goes beyond color (e.g. add an image)
@@ -39,10 +39,13 @@ The following **additional** features are implemented:
 ## Video Walkthrough (GIF)
 
 If you recorded multiple GIFs for all the implemented features, you can add them here:
-![](gif1-link-here)
-![](gif2-link-here)
-![](gif3-link-here)
-![](gif4-link-here)
+
+
+##### Game Win
+<img src='https://thumbs.gfycat.com/UncomfortableSparseGar-size_restricted.gif' title='Video Walkthrough' width='400' height='400' alt='Video Walkthrough' />
+
+##### Game Lose
+<img src='https://thumbs.gfycat.com/DearestPlainLemur-size_restricted.gif' title='Video Walkthrough' width='400' height='400' alt='Video Walkthrough' />
 
 ## Reflection Questions
 **1. If you used any outside resources to help complete your submission (websites, books, people, etc) list them here.**
