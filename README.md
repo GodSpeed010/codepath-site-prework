@@ -37,6 +37,7 @@ The following **additional** features are implemented:
 - [X] A random image/gif of a cat is set on a button every time it's clicked using an API GET request
 - [X] Start & Stop buttons use a Material Design Component Button
 - [X] Game UI is centered on screen
+- [X] Number of Heart emojis represent lives left
 
 ## Video Walkthrough (GIF)
 
@@ -58,11 +59,11 @@ If you recorded multiple GIFs for all the implemented features, you can add them
 
 A challenge I encountered in creating this submission is finding out how to add some padding inside the buttons so that the cat images don’t take up the entire space. I had tried multiple solutions such as setting padding, margins, and background-size. However, I wasn’t able to find what I wanted. Therefore, I began doing research online to see how others have solved this problem. It did take some patience, but eventually I stumbled upon a solution through my research. If I wasn’t able to find a solution after some time, I would have asked for help in an active community such as #webdev on Slack, Stack Overflow, or a Discord server for Web Development.
 
-**3. What questions about web development do you have after completing your submission? (recommended 100 - 300 words)** 
+**3. What questions about web development do you have after completing your submission? (recommended 100 - 300 words)**
 * It was mentioned in the lesson that you can apply a certain CSS style using div#someIdHere. I'm curious why you would need to specify the kind of element for the ID, as there can only be one kind of ID in the entire file. My first thoughts are that it would be sufficient to just use #someIdHere rather than specifying the type of element as well because it seems redundant.
 * I would like to know about the different architectures for keeping script code and CSS styles organized. By looking at my project thus far, I can see how it would be difficult to read through all the code and CSS Styles just to add a new feature. The Web Developer community must have developed certain strategies to help with this, and I'm very interested in the different methods.
 
-**4. If you had a few more hours to work on this project, what would you spend them doing (for example: refactoring certain functions, adding additional features, etc). Be specific. (recommended 100 - 300 words)** 
+**4. If you had a few more hours to work on this project, what would you spend them doing (for example: refactoring certain functions, adding additional features, etc). Be specific. (recommended 100 - 300 words)**
 * I would spend time organizing the script code into different files so that everything is very easy to understand. For example, I would put all the audio related code into one file and give it a relevant name to keep everything organized. This would help me find out where I would need to add code if I wanted to add a new feature in the future.
 * Another feature I would work on is improving the CSS styles. I would like to take a look at different websites or even the Material Design docs and gain ideas about the colors and styles that they use for similar layouts, and improve my project to my liking.
 * I would add more log messages. If I add features in the future, it would be difficult to debug if I don't have an idea of what is going on in my code. It's better to spend a few seconds in the present rather than hours in the future adding log messages.
