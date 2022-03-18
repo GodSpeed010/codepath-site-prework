@@ -55,6 +55,9 @@ If you recorded multiple GIFs for all the implemented features, you can add them
 * Used Google to find the CSS syntax for increasing border-width for an element. I increased the border width for all buttons.
 * Used Google and W3Schools to learn about styling background images.
 * Used Google & Stack Overflow to find out how to reset the progress of audio element rather than just pausing it. 
+* Used Material Design website & Github to figure out how to add a Material Design Component
+* Used W3Schools to learn how to display a heart emoji
+
 **2. What was a challenge you encountered in creating this submission (be specific)? How did you overcome it? (recommended 200 - 400 words)**
 
 A challenge I encountered in creating this submission is finding out how to add some padding inside the buttons so that the cat images don’t take up the entire space. I had tried multiple solutions such as setting padding, margins, and background-size. However, I wasn’t able to find what I wanted. Therefore, I began doing research online to see how others have solved this problem. It did take some patience, but eventually I stumbled upon a solution through my research. If I wasn’t able to find a solution after some time, I would have asked for help in an active community such as #webdev on Slack, Stack Overflow, or a Discord server for Web Development.
