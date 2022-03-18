@@ -5,6 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="https://glitch.com/favicon.ico" />
 
+    <link
+      href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
     <title>Hello World!</title>
 
     <!-- import the webpage's stylesheet -->
@@ -18,47 +36,73 @@
     <h1>Light and Sound Memory Game</h1>
     <p>Welcome to the game! Repeat back the pattern by pressing buttons!</p>
 
-    <div>
-      <p id="livesLeft" />      
-    </div>
-    
-    <button id="startBtn" onclick="startGame()">Start</button>
-    <button id="stopBtn" class="hidden" onclick="stopGame()">Stop</button>
+    <i id="heart1" class="fa fa-heart" style="font-size:36px;color:red;"></i>
+    <i id="heart2" class="fa fa-heart" style="font-size:36px;color:red;"></i>
+    <i id="heart3" class="fa fa-heart" style="font-size:36px;color:red;"></i>
 
+    <div>
+      <p id="livesLeft" />
+    </div>
+
+
+    
+    <button id="startBtn" onclick="startGame()" class="controlButton mdc-button mdc-button--raised">
+      <span class="mdc-button__label">Start</span>
+    </button>
+    <button id="stopBtn" onclick="stopGame()" class="controlButton mdc-button mdc-button--raised hidden">
+      <span class="mdc-button__label">Stop</span>
+    </button>
+    
+    
     <div id="gameButtonArea">
-      <audio src="https://cdn.glitch.global/d2ad326e-58b9-4a3c-8f96-77623f5ced1a/sfx1.mp3?v=1647564607073" id="audio1"></audio>
+      <audio
+        src="https://cdn.glitch.global/d2ad326e-58b9-4a3c-8f96-77623f5ced1a/sfx1.mp3?v=1647564607073"
+        id="audio1"
+      ></audio>
       <button
         id="button1"
         onclick="guess(1)"
         onmousedown="startTone(1)"
         onmouseup="stopTone(1)"
       ></button>
-      
-      <audio src="https://cdn.glitch.global/d2ad326e-58b9-4a3c-8f96-77623f5ced1a/sfx2.mp3?v=1647564606977" id="audio2"></audio>
+
+      <audio
+        src="https://cdn.glitch.global/d2ad326e-58b9-4a3c-8f96-77623f5ced1a/sfx2.mp3?v=1647564606977"
+        id="audio2"
+      ></audio>
       <button
         id="button2"
         onclick="guess(2)"
         onmousedown="startTone(2)"
         onmouseup="stopTone(2)"
       ></button>
-      
-      <audio src="https://cdn.glitch.global/d2ad326e-58b9-4a3c-8f96-77623f5ced1a/sfx3.mp3?v=1647564606393" id="audio3"></audio>
+
+      <audio
+        src="https://cdn.glitch.global/d2ad326e-58b9-4a3c-8f96-77623f5ced1a/sfx3.mp3?v=1647564606393"
+        id="audio3"
+      ></audio>
       <button
         id="button3"
         onclick="guess(3)"
         onmousedown="startTone(3)"
         onmouseup="stopTone(3)"
       ></button>
-      
-      <audio src="https://cdn.glitch.global/d2ad326e-58b9-4a3c-8f96-77623f5ced1a/sfx4.mp3?v=1647564606421" id="audio4"></audio>
+
+      <audio
+        src="https://cdn.glitch.global/d2ad326e-58b9-4a3c-8f96-77623f5ced1a/sfx4.mp3?v=1647564606421"
+        id="audio4"
+      ></audio>
       <button
         id="button4"
         onclick="guess(4)"
         onmousedown="startTone(4)"
         onmouseup="stopTone(4)"
       ></button>
-      
-      <audio src="https://cdn.glitch.global/d2ad326e-58b9-4a3c-8f96-77623f5ced1a/sfx5.mp3?v=1647564606598" id="audio5"></audio>
+
+      <audio
+        src="https://cdn.glitch.global/d2ad326e-58b9-4a3c-8f96-77623f5ced1a/sfx5.mp3?v=1647564606598"
+        id="audio5"
+      ></audio>
       <button
         id="button5"
         onclick="guess(5)"

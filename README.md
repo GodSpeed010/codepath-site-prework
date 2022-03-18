@@ -35,6 +35,8 @@ The following **optional** features are implemented:
 The following **additional** features are implemented:
 
 - [X] A random image/gif of a cat is set on a button every time it's clicked using an API GET request
+- [X] Start & Stop buttons use a Material Design Component Button
+- [X] Game UI is centered on screen
 
 ## Video Walkthrough (GIF)
 

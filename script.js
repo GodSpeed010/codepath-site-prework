@@ -17,6 +17,12 @@ var volume = 0.5; //must be between 0.0 and 1.0
 var guessCounter = 0;
 var mistakesCount = 0;
 
+//add ripple effect to all MDC buttons
+const buttons = document.querySelectorAll(".mdc-button");
+for (const button of buttons) {
+  mdc.ripple.MDCRipple.attachTo(button);
+}
+
 function startGame() {
   //initialize game variables
   progress = 0;
@@ -25,7 +31,7 @@ function startGame() {
 
   //set the number of lives remaining
   updateLivesLeftText();
-  
+
   //Swap the Start and Stop buttons
   document.getElementById("startBtn").classList.add("hidden");
   document.getElementById("stopBtn").classList.remove("hidden");
@@ -51,7 +57,18 @@ function loseGame() {
 }
 
 function updateLivesLeftText() {
-    document.getElementById("livesLeft").innerHTML = `${maxMistakes - mistakesCount + 1} lives left`
+  let livesLeft = maxMistakes - mistakesCount + 1;
+  document.getElementById("livesLeft").innerHTML = `${livesLeft} lives left`;
+
+  //loop for livesleft and set make sure not hidden
+  for (let i = 1; i <= livesLeft; i++) {
+    document.getElementById(`heart${i}`).classList.remove("hidden");
+  }
+
+  //hide as many hearts as value of mistakesCount. Start iterating from end because prev loop started unhiding from start.
+  for (let i = 0; i < mistakesCount; i++) {
+    document.getElementById(`heart${maxMistakes - i}`).classList.add("hidden");
+  }
 }
 
 async function setRandomCat(btn) {
@@ -145,7 +162,7 @@ const freqMap = {
 };
 function playTone(btn, len) {
   startTone(btn);
-  
+
   tonePlaying = true;
   setTimeout(function () {
     stopTone(btn);
