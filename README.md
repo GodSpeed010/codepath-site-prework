@@ -4,7 +4,7 @@
 
 Submitted by: **Ahmad Hossain**
 
-Time spent: **9** hours spent in total
+Time spent: **11** hours spent in total
 
 Link to project: [https://glitch.com/edit/#!/possible-spangle-september](https://glitch.com/edit/#!/possible-spangle-september)
 
@@ -29,12 +29,12 @@ The following **optional** features are implemented:
 * [X] Computer picks a different pattern each time the game is played
 * [X] Player only loses after 3 mistakes (instead of on the first mistake)
 * [X] Game button appearance change goes beyond color (e.g. add an image)
-* [ ] Game button sound is more complex than a single tone (e.g. an audio file, a chord, a sequence of multiple tones)
+* [X] Game button sound is more complex than a single tone (e.g. an audio file, a chord, a sequence of multiple tones)
 * [ ] User has a limited amount of time to enter their guess on each turn
 
 The following **additional** features are implemented:
 
-- [X] An random image/gif of a cat is set on a button every time it's clicked using an API GET request
+- [X] A random image/gif of a cat is set on a button every time it's clicked using an API GET request
 
 ## Video Walkthrough (GIF)
 
@@ -51,7 +51,7 @@ If you recorded multiple GIFs for all the implemented features, you can add them
 * Used Google to find out what div stands for to help retain its use in memory.
 * Used Google to find the CSS syntax for increasing border-width for an element. I increased the border width for all buttons.
 * Used Google and W3Schools to learn about styling background images.
-
+* Used Google & Stack Overflow to find out how to reset the progress of audio element rather than just pausing it. 
 **2. What was a challenge you encountered in creating this submission (be specific)? How did you overcome it? (recommended 200 - 400 words)**
 
 A challenge I encountered in creating this submission is finding out how to add some padding inside the buttons so that the cat images don’t take up the entire space. I had tried multiple solutions such as setting padding, margins, and background-size. However, I wasn’t able to find what I wanted. Therefore, I began doing research online to see how others have solved this problem. It did take some patience, but eventually I stumbled upon a solution through my research. If I wasn’t able to find a solution after some time, I would have asked for help in an active community such as #webdev on Slack, Stack Overflow, or a Discord server for Web Development.
