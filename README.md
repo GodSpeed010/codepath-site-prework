@@ -78,7 +78,7 @@ A challenge I encountered in creating this submission is finding out how to add 
 
 ## Interview Recording URL Link
 
-[My 5-minute Interview Recording](your-link-here)
+[My 5-minute Interview Recording](https://www.loom.com/share/a861a27a378d4dd4b194d4bc97420152)
 
 
 ## License
