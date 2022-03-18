@@ -30,7 +30,7 @@ function startGame() {
   mistakesCount = 0;
 
   //set the number of lives remaining
-  updateLivesLeftText();
+  updateLivesLeft();
 
   //Swap the Start and Stop buttons
   document.getElementById("startBtn").classList.add("hidden");
@@ -56,7 +56,7 @@ function loseGame() {
   alert("Game Over. You lost.");
 }
 
-function updateLivesLeftText() {
+function updateLivesLeft() {
   let livesLeft = maxMistakes - mistakesCount + 1;
   document.getElementById("livesLeft").innerHTML = `${livesLeft} lives left`;
 
@@ -118,7 +118,7 @@ function guess(btn) {
       loseGame();
     } else {
       mistakesCount++;
-      updateLivesLeftText();
+      updateLivesLeft();
     }
   }
 }
