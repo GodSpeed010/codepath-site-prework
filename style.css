@@ -4,10 +4,15 @@ body {
   margin: 2em;
   background-color: slategrey;
   color: white;
+  text-align: center;
 }
 
 h1 {
   font-family: verdana, arial, sans-serif;
+}
+
+.controlButton {
+  margin-bottom: 15px;
 }
 
 button {
