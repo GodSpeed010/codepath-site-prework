@@ -142,25 +142,22 @@ const freqMap = {
   5: 323.2,
 };
 function playTone(btn, len) {
-  o.frequency.value = freqMap[btn];
-  g.gain.setTargetAtTime(volume, context.currentTime + 0.05, 0.025);
-  context.resume();
+  startTone(btn);
+  
   tonePlaying = true;
   setTimeout(function () {
-    stopTone();
+    stopTone(btn);
   }, len);
 }
 function startTone(btn) {
   if (!tonePlaying) {
-    context.resume();
-    o.frequency.value = freqMap[btn];
-    g.gain.setTargetAtTime(volume, context.currentTime + 0.05, 0.025);
-    context.resume();
+    document.getElementById(`audio${btn}`).play();
     tonePlaying = true;
   }
 }
-function stopTone() {
-  g.gain.setTargetAtTime(0, context.currentTime + 0.05, 0.025);
+function stopTone(btn) {
+  document.getElementById(`audio${btn}`).currentTime = 0;
+  document.getElementById(`audio${btn}`).pause();
   tonePlaying = false;
 }
 
