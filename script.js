@@ -62,7 +62,8 @@ function updateLivesLeft() {
 
   //hide as many hearts as value of mistakesCount. Start iterating from end because prev loop started unhiding from start.
   for (let i = 0; i < mistakesCount; i++) {
-    document.getElementById(`heart${maxMistakes - i}`).classList.add("hidden");
+    document.getElementById(`heart${maxMistakes - i+1}`).classList.add("hidden");
+    console.log(`hiding heart ${maxMistakes - i}`);
   }
 }
 
@@ -110,6 +111,9 @@ function guess(btn) {
   //Guess was incorrect
   else {
     if (mistakesCount == maxMistakes) {
+      mistakesCount++;
+      updateLivesLeft();
+      
       loseGame();
     } else {
       mistakesCount++;
