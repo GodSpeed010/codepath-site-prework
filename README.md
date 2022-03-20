@@ -4,7 +4,7 @@
 
 Submitted by: **Ahmad Hossain**
 
-Time spent: **12** hours spent in total
+Time spent: **13** hours spent in total
 
 Link to project: [https://glitch.com/edit/#!/possible-spangle-september](https://glitch.com/edit/#!/possible-spangle-september)
 
@@ -38,16 +38,17 @@ The following **additional** features are implemented:
 - [X] Start & Stop buttons use a Material Design Component Button
 - [X] Game UI is centered on screen
 - [X] Number of Heart emojis represent lives left
+- [X] User can toggle between Light Mode and Dark Mode using Material Switch Component
 
 ## Video Walkthrough (GIF)
 
 If you recorded multiple GIFs for all the implemented features, you can add them here:
 
 ##### Game Win
-<img src='https://thumbs.gfycat.com/MediocreEuphoricBronco-size_restricted.gif' title='Video Walkthrough' width='400' height='400' alt='Video Walkthrough' />
+<img src='https://thumbs.gfycat.com/EveryScalyAmethystsunbird-size_restricted.gif' title='Video Walkthrough' width='400' height='400' alt='Video Walkthrough' />
 
 ##### Game Lose
-<img src='https://thumbs.gfycat.com/DevotedGoldenCockatoo-size_restricted.gif' title='Video Walkthrough' width='400' height='400' alt='Video Walkthrough' />
+<img src='https://thumbs.gfycat.com/RecklessAggravatingGraywolf-size_restricted.gif' title='Video Walkthrough' width='400' height='400' alt='Video Walkthrough' />
 
 ## Reflection Questions
 **1. If you used any outside resources to help complete your submission (websites, books, people, etc) list them here.**
@@ -57,6 +58,7 @@ If you recorded multiple GIFs for all the implemented features, you can add them
 * Used Google & Stack Overflow to find out how to reset the progress of audio element rather than just pausing it. 
 * Used Material Design website & Github to figure out how to add a Material Design Component
 * Used W3Schools to learn how to display a heart emoji
+* Used Material Design website to get html element for Material Switch
 
 **2. What was a challenge you encountered in creating this submission (be specific)? How did you overcome it? (recommended 200 - 400 words)**
 
@@ -72,9 +74,6 @@ A challenge I encountered in creating this submission is finding out how to add 
 * I would add more log messages. If I add features in the future, it would be difficult to debug if I don't have an idea of what is going on in my code. It's better to spend a few seconds in the present rather than hours in the future adding log messages.
 * It would be great if I could add unit tests to test the business logic for the game, because as more features are added, even with log messages, it would be difficult to debug. Unit tests would help me find out when something is wrong and where it is occurring.
 * I would like to change the way the logic for the game works by making it more Object-Oriented. I would have a Game class whose properties represent its current state. The class functions would be able to handle related business logic and interact with the states.
-
-
-
 
 ## Interview Recording URL Link
 

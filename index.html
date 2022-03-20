@@ -7,21 +7,20 @@
 
     <link
       href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css"
-      rel="stylesheet"
-    />
+      rel="stylesheet" />
     <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
     <link
       rel="stylesheet"
       type="text/css"
-      href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css"
-    />
+      href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" />
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      rel="stylesheet" />
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
     <title>Memory Game</title>
 
@@ -33,27 +32,68 @@
   </head>
   <body>
     <!-- this is the start of content -->
+
+    <button
+      id="basic-switch"
+      class="mdc-switch mdc-switch--unselected"
+      type="button"
+      role="switch"
+      aria-checked="false"
+      onclick="toggleDarkMode()"
+    >
+      <div class="mdc-switch__track"></div>
+      <div class="mdc-switch__handle-track">
+        <div class="mdc-switch__handle">
+          <div class="mdc-switch__shadow">
+            <div class="mdc-elevation-overlay"></div>
+          </div>
+          <div class="mdc-switch__ripple"></div>
+          <div class="mdc-switch__icons">
+            <svg
+              class="mdc-switch__icon mdc-switch__icon--on"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M19.69,5.23L8.96,15.96l-4.23-4.23L2.96,13.5l6,6L21.46,7L19.69,5.23z"
+              />
+            </svg>
+            <svg
+              class="mdc-switch__icon mdc-switch__icon--off"
+              viewBox="0 0 24 24"
+            >
+              <path d="M20 13H4v-2h16v2z" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </button>
+    <label for="basic-switch">Toggle Dark Mode</label>
+
     <h1>Light and Sound Memory Game</h1>
     <p>Welcome to the game! Repeat back the pattern by pressing buttons!</p>
 
-    <i id="heart1" class="fa fa-heart" style="font-size:36px;color:red;"></i>
-    <i id="heart2" class="fa fa-heart" style="font-size:36px;color:red;"></i>
-    <i id="heart3" class="fa fa-heart" style="font-size:36px;color:red;"></i>
+    <i id="heart1" class="fa fa-heart" style="font-size: 36px; color: red"></i>
+    <i id="heart2" class="fa fa-heart" style="font-size: 36px; color: red"></i>
+    <i id="heart3" class="fa fa-heart" style="font-size: 36px; color: red"></i>
 
     <div>
       <p id="livesLeft" />
     </div>
 
-
-    
-    <button id="startBtn" onclick="startGame()" class="controlButton mdc-button mdc-button--raised">
+    <button
+      id="startBtn"
+      onclick="startGame()"
+      class="controlButton mdc-button mdc-button--raised">
       <span class="mdc-button__label">Start</span>
     </button>
-    <button id="stopBtn" onclick="stopGame()" class="controlButton mdc-button mdc-button--raised hidden">
+    <button
+      id="stopBtn"
+      onclick="stopGame()"
+      class="controlButton mdc-button mdc-button--raised hidden"
+    >
       <span class="mdc-button__label">Stop</span>
     </button>
-    
-    
+
     <div id="gameButtonArea">
       <audio
         src="https://cdn.glitch.global/d2ad326e-58b9-4a3c-8f96-77623f5ced1a/sfx1.mp3?v=1647564607073"
