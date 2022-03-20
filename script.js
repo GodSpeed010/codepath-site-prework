@@ -7,6 +7,7 @@ const maxMistakes = 2;
 var clueHoldTime = 1000; //how long to hold each clue's light/sound
 
 //randomly generated array of size 6 with integers from 1 to 5 (inclusive)
+var isDarkMode = false;
 var pattern = Array(6)
   .fill()
   .map(() => Math.floor(5 * Math.random() + 1));
@@ -16,12 +17,6 @@ var tonePlaying = false;
 var volume = 0.5; //must be between 0.0 and 1.0
 var guessCounter = 0;
 var mistakesCount = 0;
-
-//add ripple effect to all MDC buttons
-const buttons = document.querySelectorAll(".mdc-button");
-for (const button of buttons) {
-  mdc.ripple.MDCRipple.attachTo(button);
-}
 
 function startGame() {
   //initialize game variables
@@ -190,3 +185,23 @@ g.connect(context.destination);
 g.gain.setValueAtTime(0, context.currentTime);
 o.connect(g);
 o.start(0);
+
+function toggleDarkMode() {
+  toggleDarkModeSwitch();
+
+  //set body to dark mode
+  document.body.classList.toggle("dark-mode");
+}
+
+function toggleDarkModeSwitch() {
+  //toggle the switch
+  if (isDarkMode) {
+    document.getElementById("basic-switch").className =
+      "mdc-switch mdc-switch--unselected";
+    isDarkMode = !isDarkMode;
+  } else {
+    document.getElementById("basic-switch").className =
+      "mdc-switch mdc-switch--selected";
+    isDarkMode = !isDarkMode;
+  }
+}
