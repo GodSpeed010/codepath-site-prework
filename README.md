@@ -4,7 +4,7 @@
 
 Submitted by: **Ahmad Hossain**
 
-Time spent: **15** hours spent in total
+Time spent: **16** hours spent in total
 
 Link to project: [https://glitch.com/edit/#!/possible-spangle-september](https://glitch.com/edit/#!/possible-spangle-september)
 
@@ -34,7 +34,9 @@ The following **optional** features are implemented:
 
 The following **additional** features are implemented:
 
-- [X] **Accessibility Mode** is made so that **blind people can play the game**. All button sounds along with corresponding button number are played through speaker before game starts. Keyboard shortcuts are used to guess respective buttons and to start/stop game.
+- [X] **Accessibility Mode** is made so that **blind people can play the game**. All button sounds along with corresponding button number are played through speaker before game starts. 
+Keyboard shortcuts are used to guess respective buttons and to start/stop game.
+Lives remaining are spoken aloud whenever they are changed.
 - [X] A random **image/gif of a cat** is set on a button every time it's clicked using an **API GET request**
 - [X] Start & Stop buttons use a **Material Design Component Button**
 - [X] Game UI is centered on screen
@@ -63,6 +65,7 @@ If you recorded multiple GIFs for all the implemented features, you can add them
 * Used code from [this](https://www.sitepoint.com/delay-sleep-pause-wait/) article to help me make my code sleep for some time
 * Used [this](https://stackoverflow.com/questions/53748420/javascript-speechsynthesisutterance-speak-out-numbers-properly) StackOverflow to show me how to speak numbers aloud via javascript
 * Used [this](https://stackoverflow.com/questions/53573568/synchronous-execution-in-javascript-with-speechsynthesis-speak) StackOverflow post to learn about the Speech Synthesis onend callback.
+* Used [this](https://stackoverflow.com/questions/6976486/is-there-any-way-in-javascript-to-focus-the-document-content-area) StackOverflow post to figure out how to remove focus from an active element. I used this to prevent the Accessibility toggle switch from staying focused after it has been turned on, allowing the user to immediately begin using keyboard shortcuts. 
 
 **2. What was a challenge you encountered in creating this submission (be specific)? How did you overcome it? (recommended 200 - 400 words)**
 
