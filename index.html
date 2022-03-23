@@ -33,7 +33,9 @@
   <body>
     <!-- this is the start of content -->
 
-    <button
+    <div class="switches-container">
+      <div>
+                <button
       id="basic-switch"
       class="mdc-switch mdc-switch--unselected"
       type="button"
@@ -68,10 +70,10 @@
       </div>
     </button>
     <label for="basic-switch">Toggle Dark Mode</label>
+      </div>
 
-    <br>
-    
-    <button
+      <div>
+            <button
       id="basic-switch2"
       class="mdc-switch mdc-switch--unselected"
       type="button"
@@ -106,6 +108,9 @@
       </div>
     </button>
     <label for="basic-switch">Toggle Acessibility Mode</label>
+      </div>
+    </div>
+
     
     <h1>Light and Sound Memory Game</h1>
     <p>Welcome to the game! Repeat back the pattern by pressing buttons!</p>
@@ -117,7 +122,7 @@
     <div>
       <p id="livesLeft" />
     </div>
-
+    
     <button
       id="startBtn"
       onclick="startGame()"

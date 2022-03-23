@@ -4,7 +4,7 @@
 
 Submitted by: **Ahmad Hossain**
 
-Time spent: **16** hours spent in total
+Time spent: **16.5** hours spent in total
 
 Link to project: [https://glitch.com/edit/#!/possible-spangle-september](https://glitch.com/edit/#!/possible-spangle-september)
 

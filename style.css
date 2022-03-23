@@ -77,6 +77,15 @@ button {
   color: white;
 }
 
+.switches-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.switches-container > div {
+  margin-bottom: 15px;
+}
+
 /* images and videos max out at full width */
 img,
 video {
