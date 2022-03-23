@@ -53,13 +53,16 @@ If you recorded multiple GIFs for all the implemented features, you can add them
 
 ## Reflection Questions
 **1. If you used any outside resources to help complete your submission (websites, books, people, etc) list them here.**
-* Used Google to find out what div stands for to help retain its use in memory.
 * Used Google to find the CSS syntax for increasing border-width for an element. I increased the border width for all buttons.
 * Used Google and W3Schools to learn about styling background images.
 * Used Google & Stack Overflow to find out how to reset the progress of audio element rather than just pausing it. 
 * Used Material Design website & Github to figure out how to add a Material Design Component
 * Used W3Schools to learn how to display a heart emoji
 * Used Material Design website to get html element for Material Switch
+* Used [this](https://css-tricks.com/snippets/javascript/javascript-keycodes/) website to find keycodes for keyboard keys so that I can setup listeners
+* Used code from [this](https://www.sitepoint.com/delay-sleep-pause-wait/) article to help me make my code sleep for some time
+* Used [this](https://stackoverflow.com/questions/53748420/javascript-speechsynthesisutterance-speak-out-numbers-properly) StackOverflow to show me how to speak numbers aloud via javascript
+* Used [this](https://stackoverflow.com/questions/53573568/synchronous-execution-in-javascript-with-speechsynthesis-speak) StackOverflow post to learn about the Speech Synthesis onend callback.
 
 **2. What was a challenge you encountered in creating this submission (be specific)? How did you overcome it? (recommended 200 - 400 words)**
 

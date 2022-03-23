@@ -227,7 +227,7 @@ function toggleAccessibilityMode() {
 
     //Play instruction message
     var msg = new SpeechSynthesisUtterance(
-      "Repeat back the pattern by pressing the keyboard number associated with the sound. " +
+      "To win the game, repeat back the pattern by pressing the keyboard number associated with the sound. " +
         "The number associated with each sound will be played once after this message. " +
         "Press R to replay it at any time. " +
         "After the following message, press enter to start playing. "
@@ -253,6 +253,7 @@ function toggleAccessibilityMode() {
     if (event.keyCode == rKeyCode) {
       console.log("R pressed");
       playNumToSoundSequence();
+      
     } else if (event.keyCode == enterKeyCode) {
       console.log("Enter pressed");
       //use enter key to start/stop game
@@ -262,6 +263,8 @@ function toggleAccessibilityMode() {
         startGame();
       }
     } else if (event.keyCode >= minNumKeyCode && event.keyCode <= maxNumKeyCode) {
+      //guess button using keyboard keys
+      
       let numPressed = Math.abs(event.keyCode - 49) + 1;
       console.log("pressed " + numPressed);
       guess(numPressed);
