@@ -45,15 +45,27 @@ function stopGame() {
 
 function winGame() {
   stopGame();
-  alert("Game Over. You won!");
+  let winMessage = "Game Over. You won!";
+
+  if (isAccessibilityMode) {
+    speakMessage(winMessage);
+  } else {
+    alert(winMessage);
+  }
 }
 
 function loseGame() {
   stopGame();
-  alert("Game Over. You lost.");
+  let loseMessage = "Game Over. You lost.";
+
+  if (isAccessibilityMode) {
+    speakMessage(loseMessage);
+  } else {
+    alert(loseMessage);
+  }
 }
 
-function updateLivesLeft() {
+async function updateLivesLeft() {
   let livesLeft = maxMistakes - mistakesCount + 1;
   document.getElementById("livesLeft").innerHTML = `${livesLeft} lives left`;
 
@@ -68,6 +80,11 @@ function updateLivesLeft() {
       .getElementById(`heart${maxMistakes - i + 1}`)
       .classList.add("hidden");
     console.log(`hiding heart ${maxMistakes - i}`);
+  }
+
+  //tell user how many lives left if Accessibility Mode is enabled
+  if (isAccessibilityMode) {
+    speakMessage(`${livesLeft} lives left`);
   }
 }
 
@@ -225,6 +242,14 @@ function toggleAccessibilityMode() {
       "mdc-switch mdc-switch--selected";
     isAccessibilityMode = !isAccessibilityMode;
 
+    // Give the document focus
+    window.focus();
+
+    // Remove focus from any focused element
+    if (document.activeElement) {
+      document.activeElement.blur();
+    }
+
     //Play instruction message
     var msg = new SpeechSynthesisUtterance(
       "To win the game, repeat back the pattern by pressing the keyboard number associated with the sound. " +
@@ -241,19 +266,17 @@ function toggleAccessibilityMode() {
   }
 }
 
- document.addEventListener("keydown", function (event) {
+document.addEventListener("keydown", function (event) {
   let rKeyCode = 82;
   let enterKeyCode = 13;
-  
+
   let minNumKeyCode = 49; //keyCode for 1
   let maxNumKeyCode = 53; //keyCode for 5
-  
-  
+
   if (isAccessibilityMode) {
     if (event.keyCode == rKeyCode) {
       console.log("R pressed");
       playNumToSoundSequence();
-      
     } else if (event.keyCode == enterKeyCode) {
       console.log("Enter pressed");
       //use enter key to start/stop game
@@ -262,24 +285,29 @@ function toggleAccessibilityMode() {
       } else {
         startGame();
       }
-    } else if (event.keyCode >= minNumKeyCode && event.keyCode <= maxNumKeyCode) {
+    } else if (
+      event.keyCode >= minNumKeyCode &&
+      event.keyCode <= maxNumKeyCode
+    ) {
       //guess button using keyboard keys
-      
-      let numPressed = Math.abs(event.keyCode - 49) + 1;
+
+      let numPressed = Math.abs(event.keyCode - minNumKeyCode) + 1;
       console.log("pressed " + numPressed);
-      guess(numPressed);
-      playTone(numPressed, 500);
-      
+
+      keyBoardGuess(numPressed);
     }
   }
 });
 
+async function keyBoardGuess(numPressed) {
+  guess(numPressed);
+  playTone(numPressed, 500);
+}
+
 async function playNumToSoundSequence() {
   for (let btn = 1; btn <= buttonCount; btn++) {
     //say which button sound is about to be played
-    let msg = new SpeechSynthesisUtterance(`Button ${btn}`);
-    msg.lang = "en-US";
-    window.speechSynthesis.speak(msg);
+    speakMessage(`Button ${btn}`);
 
     await sleep(1000);
     playBtnClue(btn);
@@ -296,4 +324,10 @@ function playBtnClue(btn) {
   lightButton(btn);
   playTone(btn, clueHoldTime);
   setTimeout(clearButton, clueHoldTime, btn);
+}
+
+function speakMessage(msg) {
+  var msg = new SpeechSynthesisUtterance(msg);
+  msg.lang = "en-US";
+  window.speechSynthesis.speak(msg);
 }
