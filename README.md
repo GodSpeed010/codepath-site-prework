@@ -4,7 +4,7 @@
 
 Submitted by: **Ahmad Hossain**
 
-Time spent: **16.5** hours spent in total
+Time spent: **17** hours spent in total
 
 Link to project: [https://glitch.com/edit/#!/possible-spangle-september](https://glitch.com/edit/#!/possible-spangle-september)
 
@@ -47,11 +47,16 @@ Lives remaining are spoken aloud whenever they are changed.
 
 If you recorded multiple GIFs for all the implemented features, you can add them here:
 
+##### Accessibility Feature Videos (With Audio)
+**Winning Game**: [Link](https://drive.google.com/file/d/1pQU7KhMQjQMmC9RLcwPAUCwYqFsXI_H0/view?usp=sharing)
+
+**Losing Game**: [Link](https://drive.google.com/file/d/1Kjil6LCmoSHt97n29ASlRA1xkC9rzBgX/view?usp=sharing)
+
 ##### Game Win
-<img src='https://thumbs.gfycat.com/EveryScalyAmethystsunbird-size_restricted.gif' title='Video Walkthrough' width='400' height='400' alt='Video Walkthrough' />
+<img src='https://thumbs.gfycat.com/IdealisticFalseAmericanbadger-size_restricted.gif' title='Video Walkthrough' width='400' height='400' alt='Video Walkthrough' />
 
 ##### Game Lose
-<img src='https://thumbs.gfycat.com/RecklessAggravatingGraywolf-size_restricted.gif' title='Video Walkthrough' width='400' height='400' alt='Video Walkthrough' />
+<img src='https://thumbs.gfycat.com/UnacceptableAngryHoiho-size_restricted.gif' title='Video Walkthrough' width='400' height='400' alt='Video Walkthrough' />
 
 ## Reflection Questions
 **1. If you used any outside resources to help complete your submission (websites, books, people, etc) list them here.**
