@@ -47,15 +47,15 @@ Lives remaining are spoken aloud whenever they are changed.
 
 If you recorded multiple GIFs for all the implemented features, you can add them here:
 
-##### Accessibility Feature Videos (With Audio)
+### Accessibility Feature Videos (With Audio)
 **Winning Game**: [Link](https://drive.google.com/file/d/1pQU7KhMQjQMmC9RLcwPAUCwYqFsXI_H0/view?usp=sharing)
 
 **Losing Game**: [Link](https://drive.google.com/file/d/1Kjil6LCmoSHt97n29ASlRA1xkC9rzBgX/view?usp=sharing)
 
-##### Game Win
+### Game Win
 <img src='https://thumbs.gfycat.com/IdealisticFalseAmericanbadger-size_restricted.gif' title='Video Walkthrough' width='400' height='400' alt='Video Walkthrough' />
 
-##### Game Lose
+### Game Lose
 <img src='https://thumbs.gfycat.com/UnacceptableAngryHoiho-size_restricted.gif' title='Video Walkthrough' width='400' height='400' alt='Video Walkthrough' />
 
 ## Reflection Questions
