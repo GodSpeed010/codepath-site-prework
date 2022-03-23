@@ -2,12 +2,14 @@
 const cluePauseTime = 333; //how long to pause in between clues
 const nextClueWaitTime = 1000; //how long to wait before starting playback of the clue sequence
 const maxMistakes = 2;
+const buttonCount = 5;
 
 //Global Variables
 var clueHoldTime = 1000; //how long to hold each clue's light/sound
 
 //randomly generated array of size 6 with integers from 1 to 5 (inclusive)
 var isDarkMode = false;
+let isAccessibilityMode = false;
 var pattern = Array(6)
   .fill()
   .map(() => Math.floor(5 * Math.random() + 1));
@@ -62,7 +64,9 @@ function updateLivesLeft() {
 
   //hide as many hearts as value of mistakesCount. Start iterating from end because prev loop started unhiding from start.
   for (let i = 0; i < mistakesCount; i++) {
-    document.getElementById(`heart${maxMistakes - i+1}`).classList.add("hidden");
+    document
+      .getElementById(`heart${maxMistakes - i + 1}`)
+      .classList.add("hidden");
     console.log(`hiding heart ${maxMistakes - i}`);
   }
 }
@@ -113,7 +117,7 @@ function guess(btn) {
     if (mistakesCount == maxMistakes) {
       mistakesCount++;
       updateLivesLeft();
-      
+
       loseGame();
     } else {
       mistakesCount++;
@@ -208,4 +212,85 @@ function toggleDarkModeSwitch() {
       "mdc-switch mdc-switch--selected";
     isDarkMode = !isDarkMode;
   }
+}
+
+function toggleAccessibilityMode() {
+  //toggle the switch
+  if (isAccessibilityMode) {
+    document.getElementById("basic-switch2").className =
+      "mdc-switch mdc-switch--unselected";
+    isAccessibilityMode = !isAccessibilityMode;
+  } else {
+    document.getElementById("basic-switch2").className =
+      "mdc-switch mdc-switch--selected";
+    isAccessibilityMode = !isAccessibilityMode;
+
+    //Play instruction message
+    var msg = new SpeechSynthesisUtterance(
+      "Repeat back the pattern by pressing the keyboard number associated with the sound. " +
+        "The number associated with each sound will be played once after this message. " +
+        "Press R to replay it at any time. " +
+        "After the following message, press enter to start playing. "
+    );
+    msg.lang = "en-US";
+    window.speechSynthesis.speak(msg);
+
+    msg.onend = function () {
+      playNumToSoundSequence();
+    };
+  }
+}
+
+ document.addEventListener("keydown", function (event) {
+  let rKeyCode = 82;
+  let enterKeyCode = 13;
+  
+  let minNumKeyCode = 49; //keyCode for 1
+  let maxNumKeyCode = 53; //keyCode for 5
+  
+  
+  if (isAccessibilityMode) {
+    if (event.keyCode == rKeyCode) {
+      console.log("R pressed");
+      playNumToSoundSequence();
+    } else if (event.keyCode == enterKeyCode) {
+      console.log("Enter pressed");
+      //use enter key to start/stop game
+      if (gamePlaying) {
+        stopGame();
+      } else {
+        startGame();
+      }
+    } else if (event.keyCode >= minNumKeyCode && event.keyCode <= maxNumKeyCode) {
+      let numPressed = Math.abs(event.keyCode - 49) + 1;
+      console.log("pressed " + numPressed);
+      guess(numPressed);
+      playTone(numPressed, 500);
+      
+    }
+  }
+});
+
+async function playNumToSoundSequence() {
+  for (let btn = 1; btn <= buttonCount; btn++) {
+    //say which button sound is about to be played
+    let msg = new SpeechSynthesisUtterance(`Button ${btn}`);
+    msg.lang = "en-US";
+    window.speechSynthesis.speak(msg);
+
+    await sleep(1000);
+    playBtnClue(btn);
+    await sleep(2000);
+  }
+}
+
+function sleep(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+function playBtnClue(btn) {
+  //Play button sound
+  lightButton(btn);
+  playTone(btn, clueHoldTime);
+  setTimeout(clearButton, clueHoldTime, btn);
 }

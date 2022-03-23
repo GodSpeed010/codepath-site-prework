@@ -4,7 +4,7 @@
 
 Submitted by: **Ahmad Hossain**
 
-Time spent: **13** hours spent in total
+Time spent: **15** hours spent in total
 
 Link to project: [https://glitch.com/edit/#!/possible-spangle-september](https://glitch.com/edit/#!/possible-spangle-september)
 
@@ -34,11 +34,12 @@ The following **optional** features are implemented:
 
 The following **additional** features are implemented:
 
-- [X] A random image/gif of a cat is set on a button every time it's clicked using an API GET request
-- [X] Start & Stop buttons use a Material Design Component Button
+- [X] **Accessibility Mode** is made so that **blind people can play the game**. All button sounds along with corresponding button number are played through speaker before game starts. Keyboard shortcuts are used to guess respective buttons and to start/stop game.
+- [X] A random **image/gif of a cat** is set on a button every time it's clicked using an **API GET request**
+- [X] Start & Stop buttons use a **Material Design Component Button**
 - [X] Game UI is centered on screen
-- [X] Number of Heart emojis represent lives left
-- [X] User can toggle between Light Mode and Dark Mode using Material Switch Component
+- [X] Number of **Heart emojis** represent lives left
+- [X] User can toggle between **Light Mode** and **Dark Mode** using **Material Switch Component**
 
 ## Video Walkthrough (GIF)
 
