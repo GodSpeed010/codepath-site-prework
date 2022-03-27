@@ -272,7 +272,10 @@ document.addEventListener("keydown", function (event) {
 
   let minNumKeyCode = 49; //keyCode for 1
   let maxNumKeyCode = 53; //keyCode for 5
-
+  
+  let minNumpadNumKeyCode = 97; //keyCode for 1 on Numpad
+  let maxNumpadNumKeyCode = 101; //keyCode for 5 on Numpad
+  
   if (isAccessibilityMode) {
     if (event.keyCode == rKeyCode) {
       console.log("R pressed");
@@ -285,13 +288,17 @@ document.addEventListener("keydown", function (event) {
       } else {
         startGame();
       }
-    } else if (
-      event.keyCode >= minNumKeyCode &&
-      event.keyCode <= maxNumKeyCode
-    ) {
+    } else if (event.keyCode >= minNumKeyCode && event.keyCode <= maxNumKeyCode) {
       //guess button using keyboard keys
 
       let numPressed = Math.abs(event.keyCode - minNumKeyCode) + 1;
+      console.log("pressed " + numPressed);
+
+      keyBoardGuess(numPressed);
+    } else if (event.keyCode >= minNumpadNumKeyCode && event.keyCode <= maxNumpadNumKeyCode) {
+      //guess button using numpad keyboard keys
+
+      let numPressed = Math.abs(event.keyCode - minNumpadNumKeyCode) + 1;
       console.log("pressed " + numPressed);
 
       keyBoardGuess(numPressed);
