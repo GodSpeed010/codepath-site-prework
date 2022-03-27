@@ -4,7 +4,7 @@
 
 Submitted by: **Ahmad Hossain**
 
-Time spent: **18.8** hours spent in total
+Time spent: **19** hours spent in total
 
 Link to project: [https://glitch.com/edit/#!/possible-spangle-september](https://glitch.com/edit/#!/possible-spangle-september)
 
@@ -57,10 +57,10 @@ If you recorded multiple GIFs for all the implemented features, you can add them
 **Losing Game**: [Link](https://drive.google.com/file/d/1Kjil6LCmoSHt97n29ASlRA1xkC9rzBgX/view?usp=sharing)
 
 ### Game Win
-<img src='https://thumbs.gfycat.com/IdealisticFalseAmericanbadger-size_restricted.gif' title='Video Walkthrough' width='400' height='400' alt='Video Walkthrough' />
+<img src='https://thumbs.gfycat.com/MatureLargeFlatcoatretriever-size_restricted.gif' title='Video Walkthrough' width='400' height='400' alt='Video Walkthrough' />
 
 ### Game Lose
-<img src='https://thumbs.gfycat.com/UnacceptableAngryHoiho-size_restricted.gif' title='Video Walkthrough' width='400' height='400' alt='Video Walkthrough' />
+<img src='https://thumbs.gfycat.com/FocusedRareFlyingsquirrel-size_restricted.gif' title='Video Walkthrough' width='400' height='400' alt='Video Walkthrough' />
 
 ## Reflection Questions
 **1. If you used any outside resources to help complete your submission (websites, books, people, etc) list them here.**
