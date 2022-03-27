@@ -4,7 +4,7 @@
 
 Submitted by: **Ahmad Hossain**
 
-Time spent: **17** hours spent in total
+Time spent: **17.5** hours spent in total
 
 Link to project: [https://glitch.com/edit/#!/possible-spangle-september](https://glitch.com/edit/#!/possible-spangle-september)
 
@@ -42,12 +42,15 @@ Lives remaining are spoken aloud whenever they are changed.
 - [X] Game UI is centered on screen
 - [X] Number of **Heart emojis** represent lives left
 - [X] User can toggle between **Light Mode** and **Dark Mode** using **Material Switch Component**
+- [X] **Custom Font** is used from Google Fonts style sheet
 
 ## Video Walkthrough (GIF)
 
 If you recorded multiple GIFs for all the implemented features, you can add them here:
 
 ### Accessibility Feature Videos (With Audio)
+**NOTE:** Keyboard shortcuts are being used in the videos to interact with the game
+
 **Winning Game**: [Link](https://drive.google.com/file/d/1pQU7KhMQjQMmC9RLcwPAUCwYqFsXI_H0/view?usp=sharing)
 
 **Losing Game**: [Link](https://drive.google.com/file/d/1Kjil6LCmoSHt97n29ASlRA1xkC9rzBgX/view?usp=sharing)
@@ -71,6 +74,7 @@ If you recorded multiple GIFs for all the implemented features, you can add them
 * Used [this](https://stackoverflow.com/questions/53748420/javascript-speechsynthesisutterance-speak-out-numbers-properly) StackOverflow to show me how to speak numbers aloud via javascript
 * Used [this](https://stackoverflow.com/questions/53573568/synchronous-execution-in-javascript-with-speechsynthesis-speak) StackOverflow post to learn about the Speech Synthesis onend callback.
 * Used [this](https://stackoverflow.com/questions/6976486/is-there-any-way-in-javascript-to-focus-the-document-content-area) StackOverflow post to figure out how to remove focus from an active element. I used this to prevent the Accessibility toggle switch from staying focused after it has been turned on, allowing the user to immediately begin using keyboard shortcuts. 
+* Used [this Google Font](https://fonts.google.com/specimen/Varela+Round#standard-styles) to get the style sheet link for the Varela Rounded Font
 
 **2. What was a challenge you encountered in creating this submission (be specific)? How did you overcome it? (recommended 200 - 400 words)**
 
