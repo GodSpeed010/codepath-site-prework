@@ -4,7 +4,7 @@
 
 Submitted by: **Ahmad Hossain**
 
-Time spent: **17.5** hours spent in total
+Time spent: **18** hours spent in total
 
 Link to project: [https://glitch.com/edit/#!/possible-spangle-september](https://glitch.com/edit/#!/possible-spangle-september)
 
@@ -43,6 +43,7 @@ Lives remaining are spoken aloud whenever they are changed.
 - [X] Number of **Heart emojis** represent lives left
 - [X] User can toggle between **Light Mode** and **Dark Mode** using **Material Switch Component**
 - [X] **Custom Font** is used from Google Fonts style sheet
+- [X] **Custom background color** is used
 
 ## Video Walkthrough (GIF)
 
