@@ -300,15 +300,23 @@ document.addEventListener("keydown", function (event) {
 
       let numPressed = Math.abs(event.keyCode - minNumpadNumKeyCode) + 1;
       console.log("pressed " + numPressed);
-
-      keyBoardGuess(numPressed);
+      
+      keyBoardGuess(numPressed)
     }
   }
 });
 
 async function keyBoardGuess(numPressed) {
+  //make button light up to simulate physical press
+  lightButton(numPressed);
+  
+  let tonePlayTime = 500
   guess(numPressed);
-  playTone(numPressed, 500);
+  playTone(numPressed, tonePlayTime);
+  
+  //clear 'lit' class from button after tone is played
+  // clearButton(numPressed)
+  setTimeout(clearButton, tonePlayTime, numPressed);
 }
 
 async function playNumToSoundSequence() {
