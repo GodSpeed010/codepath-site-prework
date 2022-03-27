@@ -1,14 +1,14 @@
 /* adjust typography defaults */
 body {
-  font-family: helvetica, arial, sans-serif;
+  font-family: Varela Round, helvetica, arial, sans-serif;
   margin: 2em;
-  background-color: slategrey;
+  background-color: #001e3c;
   color: white;
   text-align: center;
 }
 
 h1 {
-  font-family: verdana, arial, sans-serif;
+  font-family: Varela Round, verdana, arial, sans-serif;
 }
 
 .controlButton {
@@ -84,6 +84,10 @@ button {
 
 .switches-container > div {
   margin-bottom: 15px;
+}
+
+span {
+  font-family: Varela Round, sans-serif;
 }
 
 /* images and videos max out at full width */
