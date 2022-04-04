@@ -211,9 +211,20 @@ g.gain.setValueAtTime(0, context.currentTime);
 o.connect(g);
 o.start(0);
 
+
 function toggleDarkMode() {
   toggleDarkModeSwitch();
-
+  
+  if (isDarkMode) {
+    //override theme with dark mode
+    document.body.style.backgroundColor = "black";
+  } else {
+    //Just switched off Dark Mode. Change color back to current theme
+    const selectedThemeButton = document.getElementsByClassName("selected-theme")[0]
+    const currentTheme = getComputedStyle(selectedThemeButton).backgroundColor
+    document.body.style.background = currentTheme;
+  }
+  
   //set body to dark mode
   document.body.classList.toggle("dark-mode");
 }
@@ -221,12 +232,16 @@ function toggleDarkMode() {
 function toggleDarkModeSwitch() {
   //toggle the switch
   if (isDarkMode) {
+    //toggle switch selected state
     document.getElementById("basic-switch").className =
       "mdc-switch mdc-switch--unselected";
+    
     isDarkMode = !isDarkMode;
   } else {
+    //toggle switch selected state
     document.getElementById("basic-switch").className =
       "mdc-switch mdc-switch--selected";
+    
     isDarkMode = !isDarkMode;
   }
 }
@@ -346,3 +361,29 @@ function speakMessage(msg) {
   msg.lang = "en-US";
   window.speechSynthesis.speak(msg);
 }
+
+//setup click listener for theme buttons
+//minimal hardcoding for scalability
+const themeButtons = document
+  .querySelectorAll('#theme-container>button')
+themeButtons.forEach( (btn) => {
+  btn.addEventListener('click', () => {
+    //if Dark Mode was on, toggle the switch to off
+    if (isDarkMode) {
+      toggleDarkModeSwitch();
+    }
+    
+    const btnBgColor = getComputedStyle(btn).backgroundColor;
+    const btnClassColor = btn.className;
+    
+    //remove .selected-theme from prev. selected element
+    document.getElementsByClassName("selected-theme")[0].classList.remove("selected-theme");
+    
+    //add .selected-theme to current element for white border
+    btn.classList.add("selected-theme");
+    
+    //set background-color using current btn's bg color
+    document.body.style.backgroundColor = btnBgColor;
+    
+  })
+})

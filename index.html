@@ -7,26 +7,32 @@
 
     <link
       href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css"
-      rel="stylesheet" />
+      rel="stylesheet"
+    />
     <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
     <link
       rel="stylesheet"
       type="text/css"
-      href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" />
+      href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css"
+    />
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet" />
+      rel="stylesheet"
+    />
 
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    
+
     <!--  Import Varela Round Font    -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Memory Game</title>
 
     <!-- import the webpage's stylesheet -->
@@ -38,88 +44,101 @@
   <body>
     <!-- this is the start of content -->
 
+    <div class="theme-section">
+    <p>Themes</p>
+    <div id="theme-container">
+      <button class="dark-blue selected-theme" />
+      <button class="pink" />
+      <button class="purple" />
+      <button class="light-green" />
+      <button class="lavender" />
+      <button class="red" />
+    </div>
+
+    </div>
+
+
     <div class="switches-container">
       <div>
-                <button
-      id="basic-switch"
-      class="mdc-switch mdc-switch--unselected"
-      type="button"
-      role="switch"
-      aria-checked="false"
-      onclick="toggleDarkMode()"
-    >
-      <div class="mdc-switch__track"></div>
-      <div class="mdc-switch__handle-track">
-        <div class="mdc-switch__handle">
-          <div class="mdc-switch__shadow">
-            <div class="mdc-elevation-overlay"></div>
+        <button
+          id="basic-switch"
+          class="mdc-switch mdc-switch--unselected"
+          type="button"
+          role="switch"
+          aria-checked="false"
+          onclick="toggleDarkMode()"
+        >
+          <div class="mdc-switch__track"></div>
+          <div class="mdc-switch__handle-track">
+            <div class="mdc-switch__handle">
+              <div class="mdc-switch__shadow">
+                <div class="mdc-elevation-overlay"></div>
+              </div>
+              <div class="mdc-switch__ripple"></div>
+              <div class="mdc-switch__icons">
+                <svg
+                  class="mdc-switch__icon mdc-switch__icon--on"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M19.69,5.23L8.96,15.96l-4.23-4.23L2.96,13.5l6,6L21.46,7L19.69,5.23z"
+                  />
+                </svg>
+                <svg
+                  class="mdc-switch__icon mdc-switch__icon--off"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M20 13H4v-2h16v2z" />
+                </svg>
+              </div>
+            </div>
           </div>
-          <div class="mdc-switch__ripple"></div>
-          <div class="mdc-switch__icons">
-            <svg
-              class="mdc-switch__icon mdc-switch__icon--on"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M19.69,5.23L8.96,15.96l-4.23-4.23L2.96,13.5l6,6L21.46,7L19.69,5.23z"
-              />
-            </svg>
-            <svg
-              class="mdc-switch__icon mdc-switch__icon--off"
-              viewBox="0 0 24 24"
-            >
-              <path d="M20 13H4v-2h16v2z" />
-            </svg>
-          </div>
-        </div>
-      </div>
-    </button>
-    <label for="basic-switch">Toggle Dark Mode</label>
+        </button>
+        <label for="basic-switch">Toggle Dark Mode</label>
       </div>
 
       <div>
-            <button
-      id="basic-switch2"
-      class="mdc-switch mdc-switch--unselected"
-      type="button"
-      role="switch"
-      aria-checked="false"
-      onclick="toggleAccessibilityMode()"
-    >
-      <div class="mdc-switch__track"></div>
-      <div class="mdc-switch__handle-track">
-        <div class="mdc-switch__handle">
-          <div class="mdc-switch__shadow">
-            <div class="mdc-elevation-overlay"></div>
+        <button
+          id="basic-switch2"
+          class="mdc-switch mdc-switch--unselected"
+          type="button"
+          role="switch"
+          aria-checked="false"
+          onclick="toggleAccessibilityMode()"
+        >
+          <div class="mdc-switch__track"></div>
+          <div class="mdc-switch__handle-track">
+            <div class="mdc-switch__handle">
+              <div class="mdc-switch__shadow">
+                <div class="mdc-elevation-overlay"></div>
+              </div>
+              <div class="mdc-switch__ripple"></div>
+              <div class="mdc-switch__icons">
+                <svg
+                  class="mdc-switch__icon mdc-switch__icon--on"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M19.69,5.23L8.96,15.96l-4.23-4.23L2.96,13.5l6,6L21.46,7L19.69,5.23z"
+                  />
+                </svg>
+                <svg
+                  class="mdc-switch__icon mdc-switch__icon--off"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M20 13H4v-2h16v2z" />
+                </svg>
+              </div>
+            </div>
           </div>
-          <div class="mdc-switch__ripple"></div>
-          <div class="mdc-switch__icons">
-            <svg
-              class="mdc-switch__icon mdc-switch__icon--on"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M19.69,5.23L8.96,15.96l-4.23-4.23L2.96,13.5l6,6L21.46,7L19.69,5.23z"
-              />
-            </svg>
-            <svg
-              class="mdc-switch__icon mdc-switch__icon--off"
-              viewBox="0 0 24 24"
-            >
-              <path d="M20 13H4v-2h16v2z" />
-            </svg>
-          </div>
-        </div>
-      </div>
-    </button>
-    <label for="basic-switch">Toggle Acessibility Mode</label>
+        </button>
+        <label for="basic-switch">Toggle Acessibility Mode</label>
       </div>
     </div>
 
-    
     <h1>Light and Sound Memory Game</h1>
     <p>Welcome to the game! Repeat back the pattern by pressing buttons!</p>
-    
+
     <i id="heart1" class="fa fa-heart" style="font-size: 36px; color: red"></i>
     <i id="heart2" class="fa fa-heart" style="font-size: 36px; color: red"></i>
     <i id="heart3" class="fa fa-heart" style="font-size: 36px; color: red"></i>
@@ -127,11 +146,12 @@
     <div>
       <p id="livesLeft" />
     </div>
-    
+
     <button
       id="startBtn"
       onclick="startGame()"
-      class="controlButton mdc-button mdc-button--raised">
+      class="controlButton mdc-button mdc-button--raised"
+    >
       <span class="mdc-button__label">Start</span>
     </button>
     <button

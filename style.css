@@ -96,3 +96,52 @@ video {
   height: auto;
   max-width: 100%;
 }
+
+#theme-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+#theme-container button {
+  border-radius: 100%;
+  border: none;
+  padding: 20px;
+}
+
+#theme-container .selected-theme {
+  border: 2px solid white;
+}
+
+.pink {
+  background: #e57373;
+}
+
+.purple {
+  background: #ab47bc;
+}
+
+.light-green {
+  background: #81c784;
+}
+
+.red {
+  background: #d32f2f;
+}
+
+.lavender {
+  background: #C9CBFF;
+}
+
+.dark-blue {
+  background: #001e3c;
+}
+
+.theme-section {
+  margin-bottom: 15px;
+}
+
+.theme-section p {
+  margin-bottom: 6px;
+}
