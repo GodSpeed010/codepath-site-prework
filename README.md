@@ -4,7 +4,7 @@
 
 Submitted by: **Ahmad Hossain**
 
-Time spent: **20** hours spent in total
+Time spent: **23** hours spent in total
 
 Link to project: [https://glitch.com/edit/#!/possible-spangle-september](https://glitch.com/edit/#!/possible-spangle-september)
 
@@ -44,6 +44,7 @@ Lives remaining are spoken aloud whenever they are changed.
 - [X] User can toggle between **Light Mode** and **Dark Mode** using **Material Switch Component**
 - [X] **Custom Font** is used from Google Fonts style sheet
 - [X] **Custom background color** is used
+- [X] User can **click a button to change the background color** using given color palette buttons
 
 ## Video Walkthrough (GIF)
 
@@ -76,6 +77,10 @@ If you recorded multiple GIFs for all the implemented features, you can add them
 * Used [this](https://stackoverflow.com/questions/53573568/synchronous-execution-in-javascript-with-speechsynthesis-speak) StackOverflow post to learn about the Speech Synthesis onend callback.
 * Used [this](https://stackoverflow.com/questions/6976486/is-there-any-way-in-javascript-to-focus-the-document-content-area) StackOverflow post to figure out how to remove focus from an active element. I used this to prevent the Accessibility toggle switch from staying focused after it has been turned on, allowing the user to immediately begin using keyboard shortcuts. 
 * Used [this Google Font](https://fonts.google.com/specimen/Varela+Round#standard-styles) to get the style sheet link for the Varela Rounded Font
+* Used [this](
+https://stackoverflow.com/questions/49680484/how-to-add-one-event-listener-for-all-buttons) StackOverflow post to learn how to populate a list of elements from a js query on the DOM and create a click listener for each item. I used this to programatically create click listeners for each theme button in the parent container div.
+* Used [this](
+https://stackoverflow.com/questions/12576084/getting-the-real-background-color-of-an-element) StackOverflow post to find the syntax for gettting the background-color of an element via js. I used this to get the color of the button that was clicked in the theme-section, and set the background-color using that.
 
 **2. What was a challenge you encountered in creating this submission (be specific)? How did you overcome it? (recommended 200 - 400 words)**
 
