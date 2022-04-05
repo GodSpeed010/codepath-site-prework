@@ -4,7 +4,7 @@
 
 Submitted by: **Ahmad Hossain**
 
-Time spent: **23** hours spent in total
+Time spent: **23.5** hours spent in total
 
 Link to project: [https://glitch.com/edit/#!/possible-spangle-september](https://glitch.com/edit/#!/possible-spangle-september)
 
@@ -53,15 +53,15 @@ If you recorded multiple GIFs for all the implemented features, you can add them
 ### Accessibility Feature Videos (With Audio)
 **NOTE:** Keyboard shortcuts are being used in the videos to interact with the game
 
-**Winning Game**: [Link](https://drive.google.com/file/d/1pQU7KhMQjQMmC9RLcwPAUCwYqFsXI_H0/view?usp=sharing)
+**Winning Game**: [Link](https://drive.google.com/file/d/1F2RElAX7zcaEnulrcgrph5_wfDz-Iq4F/view?usp=sharing)
 
-**Losing Game**: [Link](https://drive.google.com/file/d/1Kjil6LCmoSHt97n29ASlRA1xkC9rzBgX/view?usp=sharing)
+**Losing Game**: [Link](https://drive.google.com/file/d/1jLIO-1jwA9mirHIxAxV9GEbvHiXnHRax/view?usp=sharing)
 
 ### Game Win
-<img src='https://thumbs.gfycat.com/MatureLargeFlatcoatretriever-size_restricted.gif' title='Video Walkthrough' width='400' height='400' alt='Video Walkthrough' />
+<img src='https://thumbs.gfycat.com/JointNaturalKitten-size_restricted.gif' title='Video Walkthrough' width='400' height='400' alt='Video Walkthrough' />
 
 ### Game Lose
-<img src='https://thumbs.gfycat.com/FocusedRareFlyingsquirrel-size_restricted.gif' title='Video Walkthrough' width='400' height='400' alt='Video Walkthrough' />
+<img src='https://thumbs.gfycat.com/JadedYellowishAmazontreeboa-size_restricted.gif' title='Video Walkthrough' width='400' height='400' alt='Video Walkthrough' />
 
 ## Reflection Questions
 **1. If you used any outside resources to help complete your submission (websites, books, people, etc) list them here.**
