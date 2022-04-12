@@ -34,7 +34,7 @@ The following **optional** features are implemented:
 
 The following **additional** features are implemented:
 
-- [X] **Accessibility Mode** is made so that **blind people can play the game**. All button sounds along with corresponding button number are played through speaker before game starts. 
+- [X] **Accessibility Mode** is made so that **visually impaired people can play the game**. All button sounds along with corresponding button number are played through speaker before game starts. 
 Keyboard shortcuts are used to guess respective buttons and to start/stop game.
 Lives remaining are spoken aloud whenever they are changed.
 - [X] A random **image/gif of a cat** is set on a button every time it's clicked using an **API GET request**
