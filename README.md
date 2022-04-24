@@ -80,7 +80,7 @@ If you recorded multiple GIFs for all the implemented features, you can add them
 * Used [this](
 https://stackoverflow.com/questions/49680484/how-to-add-one-event-listener-for-all-buttons) StackOverflow post to learn how to populate a list of elements from a js query on the DOM and create a click listener for each item. I used this to programatically create click listeners for each theme button in the parent container div.
 * Used [this](
-https://stackoverflow.com/questions/12576084/getting-the-real-background-color-of-an-element) StackOverflow post to find the syntax for gettting the background-color of an element via js. I used this to get the color of the button that was clicked in the theme-section, and set the background-color using that.
+https://stackoverflow.com/questions/12576084/getting-the-real-background-color-of-an-element) StackOverflow post to find the syntax for getting the background-color of an element via js. I used this to get the color of the button that was clicked in the theme-section, and set the background-color using that.
 
 **2. What was a challenge you encountered in creating this submission (be specific)? How did you overcome it? (recommended 200 - 400 words)**
 
