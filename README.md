@@ -4,7 +4,7 @@
 
 Submitted by: **Ahmad Hossain**
 
-Time spent: **23.5** hours spent in total
+Time spent: **24.5** hours spent in total
 
 Link to project: [https://glitch.com/edit/#!/possible-spangle-september](https://glitch.com/edit/#!/possible-spangle-september)
 
@@ -38,9 +38,10 @@ The following **additional** features are implemented:
 Keyboard shortcuts are used to guess respective buttons and to start/stop game.
 Lives remaining are spoken aloud whenever they are changed.
 - [X] A random **image/gif of a cat** is set on a button every time it's clicked using an **API GET request**
+- [X] Number of **Heart emojis** represent lives left
+- [X] Heart emojis have a **beating animation**
 - [X] Start & Stop buttons use a **Material Design Component Button**
 - [X] Game UI is centered on screen
-- [X] Number of **Heart emojis** represent lives left
 - [X] User can toggle between **Light Mode** and **Dark Mode** using **Material Switch Component**
 - [X] **Custom Font** is used from Google Fonts style sheet
 - [X] **Custom background color** is used
@@ -81,6 +82,7 @@ If you recorded multiple GIFs for all the implemented features, you can add them
 https://stackoverflow.com/questions/49680484/how-to-add-one-event-listener-for-all-buttons) StackOverflow post to learn how to populate a list of elements from a js query on the DOM and create a click listener for each item. I used this to programatically create click listeners for each theme button in the parent container div.
 * Used [this](
 https://stackoverflow.com/questions/12576084/getting-the-real-background-color-of-an-element) StackOverflow post to find the syntax for getting the background-color of an element via js. I used this to get the color of the button that was clicked in the theme-section, and set the background-color using that.
+* Used [W3Schools](https://www.w3schools.com/css/css3_animations.asp) to learn how to create CSS animations.
 
 **2. What was a challenge you encountered in creating this submission (be specific)? How did you overcome it? (recommended 200 - 400 words)**
 
