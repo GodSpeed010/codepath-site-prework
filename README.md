@@ -56,7 +56,7 @@ If you recorded multiple GIFs for all the implemented features, you can add them
 
 **Winning Game**: [Link](https://drive.google.com/file/d/1aPKmbEpXC0DQoTiKXNKlS4ZMZv7YMNHh/view?usp=sharing)
 
-**Losing Game**: [Link](https://youtube.com/shorts/RQvHHTTy7hM)
+**Losing Game**: [Link](https://drive.google.com/file/d/1lOk72RR746W4UG5aCFciTMTdmYaBCXuH/view?usp=sharing)
 
 ### Game Win
 <img src='https://thumbs.gfycat.com/FrailHoarseDalmatian-size_restricted.gif' title='Video Walkthrough' width='400' height='400' alt='Video Walkthrough' />
