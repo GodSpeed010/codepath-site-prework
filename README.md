@@ -54,15 +54,15 @@ If you recorded multiple GIFs for all the implemented features, you can add them
 ### Accessibility Feature Videos (With Audio)
 **NOTE:** Keyboard shortcuts are being used in the videos to interact with the game
 
-**Winning Game**: [Link](https://drive.google.com/file/d/1F2RElAX7zcaEnulrcgrph5_wfDz-Iq4F/view?usp=sharing)
+**Winning Game**: [Link](https://drive.google.com/file/d/1aPKmbEpXC0DQoTiKXNKlS4ZMZv7YMNHh/view?usp=sharing)
 
-**Losing Game**: [Link](https://drive.google.com/file/d/1jLIO-1jwA9mirHIxAxV9GEbvHiXnHRax/view?usp=sharing)
+**Losing Game**: [Link](https://youtube.com/shorts/RQvHHTTy7hM)
 
 ### Game Win
-<img src='https://thumbs.gfycat.com/JointNaturalKitten-size_restricted.gif' title='Video Walkthrough' width='400' height='400' alt='Video Walkthrough' />
+<img src='https://thumbs.gfycat.com/FrailHoarseDalmatian-size_restricted.gif' title='Video Walkthrough' width='400' height='400' alt='Video Walkthrough' />
 
 ### Game Lose
-<img src='https://thumbs.gfycat.com/JadedYellowishAmazontreeboa-size_restricted.gif' title='Video Walkthrough' width='400' height='400' alt='Video Walkthrough' />
+<img src='https://thumbs.gfycat.com/ElementaryObeseGonolek-size_restricted.gif' title='Video Walkthrough' width='400' height='400' alt='Video Walkthrough' />
 
 ## Reflection Questions
 **1. If you used any outside resources to help complete your submission (websites, books, people, etc) list them here.**
